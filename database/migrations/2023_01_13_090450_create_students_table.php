@@ -38,7 +38,7 @@ return new class extends Migration
             $table->string('pekerjaanibu');
             $table->string('notelibu');
             $table->string('emailibu');
-            $table->dateTime('tarikhpendaftaran', $precision = 0);
+            $table->date('tarikhpendaftaran', $precision = 0);
             $table->boolean('status');
             $table->timestamps();
         });

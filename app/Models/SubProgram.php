@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class SubProgram extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['program_id','nama','keterangan'];
+
+    public function program()
+    {
+        return $this->belongsTo(Program::class);
+    }
+
+    public function score()
+    {
+        return $this->hasMany(Score::class);
+    }
 }

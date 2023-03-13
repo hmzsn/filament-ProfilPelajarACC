@@ -11,7 +11,8 @@ class Category extends Model
 
     protected $fillable = ['nama', 'keterangan'];
 
-    public function programs(){
+    public function programs()
+    {
         return $this->hasMany(Program::class);
     }
 }

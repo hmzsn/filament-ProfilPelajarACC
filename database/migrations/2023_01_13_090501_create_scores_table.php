@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('score');
             $table->string('description');
             $table->string('quarter');
+            $table->date('created_date');
             $table->timestamps();
         });
     }

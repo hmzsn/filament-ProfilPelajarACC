@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Functions extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['functionname','formname','functionroles','functionimage','functionlabel'];
+
+    public function functionrole()
+    {
+        return $this->hasMany(FunctionRole::class);
+    }
+
 }

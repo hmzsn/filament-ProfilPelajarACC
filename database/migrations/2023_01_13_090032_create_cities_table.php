@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('cities', function (Blueprint $table) {
             $table->id();
             $table->foreignId('state_id')->constrained();
-            $table->string('city_code');            
+            $table->char('city_code');            
             $table->string('name');
             $table->timestamps();
         });
